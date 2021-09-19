@@ -36,17 +36,23 @@ body {
 .list {
   list-style: none;
   padding: 0;
-  margin: 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+.link {
+  text-decoration: none;
+}
 .box {
   display: flex;
+  outline: 1px solid black;
 }
 
 .container {
   width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 h1,
@@ -61,7 +67,6 @@ h4 {
 .header-content {
   height: 80px;
   align-items: center;
-  justify-content: center;
 }
 
 .logo {
@@ -81,7 +86,12 @@ h4 {
   color: var(--logo-color-frst);
 }
 
-.nav-list .item {
+.nav-list {
+  margin-left: 93px;
+  align-items: center;
+}
+
+.nav-list .link {
   text-decoration: none;
   color: var(--text-color-basic);
   font-weight: 500;
@@ -90,8 +100,16 @@ h4 {
   letter-spacing: 0.02em;
 }
 
-.nav-list .item:hover,
-.nav-list .item:focus,
+.nav-list .item {
+  margin-right: 50px;
+}
+
+.nav-list .item:last-child {
+  margin-right: 0;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
 .nav-list .current {
   color: var(--accent-color);
 }
@@ -101,13 +119,11 @@ h4 {
 }
 
 .contacts-header .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-secondary);
-  text-decoration: none;
 }
 
 .contacts-header .link:hover,
@@ -115,6 +131,13 @@ h4 {
   color: var(--accent-color);
 }
 
+.contacts-header .item {
+  margin-right: 50px;
+}
+
+.contacts-header .item:last-child {
+  margin-right: 0;
+}
 /* hero section */
 
 .hero-section {
