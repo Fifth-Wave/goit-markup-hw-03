@@ -45,11 +45,10 @@ body {
 }
 .box {
   display: flex;
-  outline: 1px solid black;
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
@@ -175,8 +174,9 @@ p {
 
 /* section our benefits */
 
-/* .our-benefits-section {
-} */
+.our-benefits-section {
+  padding: 94px 0;
+}
 
 .features .headings {
   font-weight: 700;
@@ -193,9 +193,17 @@ p {
   color: var(--text-color-secondary);
 }
 
-.features .item {
+.features {
   flex-wrap: wrap;
-  flex-basis: calc((100% - 30px) / 4);
+}
+
+.features .item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features .item:last-child {
+  margin-right: 0;
 }
 
 /* our work section*/
