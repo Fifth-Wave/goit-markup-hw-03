@@ -58,7 +58,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0 0;
 }
 
@@ -143,16 +144,18 @@ h4 {
 .hero-section {
   background: var(--bg-hero-footer-color);
   color: var(--text-color-third);
+  text-align: center;
 }
 
 .hero-section-heading {
-  font-style: normal;
+  width: 696px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-button {
@@ -172,24 +175,27 @@ h4 {
 
 /* section our benefits */
 
-.our-benefits-section {
-}
+/* .our-benefits-section {
+} */
 
 .features .headings {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-basic);
 }
 
-.features .items {
-  font-style: normal;
+.features .text {
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color-secondary);
+}
+
+.features .item {
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 30px) / 4);
 }
 
 /* our work section*/
