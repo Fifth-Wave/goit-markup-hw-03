@@ -195,16 +195,17 @@ p {
 
 .features {
   flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .features .item {
   margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
-.features .item:last-child {
+/* .features .item:nth-child(4n + 4) {
   margin-right: 0;
-}
+} */
 
 /* our work section*/
 
