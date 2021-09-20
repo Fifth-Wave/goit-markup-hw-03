@@ -13,6 +13,7 @@
 
 
 */
+
 :root {
   --text-color-basic: #212121;
   --bg-hero-footer-color: #2f303a;
@@ -51,7 +52,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 h1,
@@ -62,9 +62,13 @@ p {
   margin: 0 0;
 }
 
+/* img {
+  display: block;
+  max-width: 100%;
+} */
 /* header's styles */
 
-.header-content {
+.header-content .container {
   height: 80px;
   align-items: center;
 }
@@ -304,12 +308,28 @@ p {
 
 /* portfolio styles */
 
+.projects > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn-list {
+  justify-content: center;
+}
+
+.btn-list .item {
+  margin-right: 8px;
+}
+
+.btn-list .item:last-child {
+  margin-right: 0;
+}
+
 .filter-btn {
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   background: var(--bg-color-secnd);
@@ -325,21 +345,34 @@ p {
   color: var(--text-color-third);
 }
 
-/*  projects section  */
+/*  cards section  */
 
-.projects .headings {
-  font-style: normal;
-  font-weight: bold;
+.projects .card-set {
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.projects .card-set .item {
+  margin-top: 30px;
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.projects .caption {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color-basic);
 }
-.projects .items {
-  font-style: normal;
-  font-weight: normal;
+.projects .text {
+  margin-top: 4px;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color-secondary);
+}
+
+.projects .card-descrp {
+  padding: 20px 24px;
 }
