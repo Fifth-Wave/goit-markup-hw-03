@@ -66,6 +66,12 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* header's styles */
 
 .header-content .container {
@@ -178,10 +184,6 @@ img {
 
 /* section our benefits */
 
-.our-benefits-section {
-  padding: 94px 0;
-}
-
 .features .headings {
   font-weight: 700;
   font-size: 14px;
@@ -207,17 +209,15 @@ img {
   flex-basis: calc(100% / 4 - 30px);
 }
 
-/* .features .item:nth-child(4n + 4) {
-  margin-right: 0;
-} */
-
 /* our work section*/
+
 .our-work-section {
   padding-bottom: 94px;
 }
 
 .our-work-section .title,
 .our-team-section .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -236,23 +236,26 @@ img {
 
 /* our team section */
 .our-team-section {
-  padding: 94px 0;
   background-color: var(--bg-color-secnd);
 }
 
 .our-team-section .headings {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--text-color-basic);
 }
 
 .our-team-section .members {
+  margin-top: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--text-color-secondary);
 }
 
