@@ -208,11 +208,13 @@ p {
 } */
 
 /* our work section*/
+.our-work-section {
+  padding-bottom: 94px;
+}
 
 .our-work-section .title,
 .our-team-section .title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -220,8 +222,17 @@ p {
   text-align: center;
 }
 
+.our-work-section .list {
+  margin-right: -30px;
+}
+.our-work-section .item {
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 /* our team section */
 .our-team-section {
+  padding: 94px 0;
   background-color: var(--bg-color-secnd);
 }
 
@@ -241,17 +252,26 @@ p {
   color: var(--text-color-secondary);
 }
 
+.our-team-section .list {
+  margin-right: -30px;
+}
+
+.our-team-section .item {
+  margin-right: 30px;
+  flex-basis: (100% / 4 - 30px);
+}
+
 /* footer's style */
 
 .footer-style {
+  padding: 60px 0;
   background: var(--bg-hero-footer-color);
   color: var(--text-color-third);
 }
 
 .logo-footer {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
@@ -259,17 +279,16 @@ p {
 }
 
 .address-style {
+  margin-top: 20px;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
 }
 
 .contact-link-footer {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -277,6 +296,10 @@ p {
 .contact-link-footer:hover,
 .contact-link-footer:focus {
   color: var(--accent-color);
+}
+
+.contact-link-footer .item {
+  margin-top: 9px;
 }
 
 /* portfolio styles */
