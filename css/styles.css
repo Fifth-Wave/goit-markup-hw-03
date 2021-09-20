@@ -62,10 +62,10 @@ p {
   margin: 0 0;
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
-} */
+}
 /* header's styles */
 
 .header-content .container {
@@ -375,4 +375,7 @@ p {
 
 .projects .card-descrp {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
